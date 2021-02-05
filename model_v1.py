@@ -34,7 +34,7 @@ st.write(label_df.labels_cat.value_counts())
 
 
 url = st.text_input("Input the image URL here")
-
+st.write("[Example link](https://images.homedepot-static.com/productImages/a4e315b5-e2b7-4fd9-94a0-c7d51408285d/svn/brady-stock-signs-94143-64_1000.jpg)")
 
 
 json_file = open(cwd + "/model_10.json", 'r')
@@ -71,20 +71,29 @@ def classify_image(url):
     
     predictions = loaded_model.predict(data[1:2])
     score = tf.nn.softmax(predictions[0])
-
-    st.write("Model predicts the image as: ")
-    st.write(label_df['labels_cat'][label_df.labels==np.argmax(score)].head(1).iloc[0])   
-    st.write("With Confidence of")
-    st.write(100 * np.max(score))
-    
-    
+    st.write("Image Given is :")
     st.image(data, width=None)
+    
+    
+#     st.write("Model predicts the image as: ")
+    
+    md_results = f"## Model predicts the image as: **{label_df['labels_cat'][label_df.labels==np.argmax(score)].head(1).iloc[0]}** ##\n With Confidence of **{100 * np.max(score)}**."
+
+    st.markdown(md_results)
+    
+#     st.write(label_df['labels_cat'][label_df.labels==np.argmax(score)].head(1).iloc[0])   
+#     st.write("With Confidence of")
+#     st.write(100 * np.max(score))
+    
+    
 
 #     plt.imshow(data[1], cmap=mpl.cm.binary)
 #     plt.axis("off")
 #     plt.show()
              
-           
+         
 # url = "https://images.homedepot-static.com/productImages/a4e315b5-e2b7-4fd9-94a0-c7d51408285d/svn/brady-stock-signs-94143-64_1000.jpg"
-    
-classify_image(url)
+try:    
+    classify_image(url)
+except ValueError:
+    st.error("Please enter a valid input which is in JPG format")    
