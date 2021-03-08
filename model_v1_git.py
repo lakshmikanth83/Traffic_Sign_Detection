@@ -1,13 +1,13 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from PIL import Image
 import tensorflow as tf
 from skimage import transform
 from skimage import exposure
 from tensorflow.keras import datasets, layers, models
-import matplotlib as mpl
+# import matplotlib as mpl
 import requests
 from keras.models import model_from_json
 from numpy import asarray
