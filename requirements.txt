@@ -1,6 +1,6 @@
-matplotlib
-PIL
-tensorflow
-skimage
-requests
-keras
+matplotlib==3.3.2
+
+tensorflow==2.4.1
+
+requests==2.24.0
+Keras==2.4.3
