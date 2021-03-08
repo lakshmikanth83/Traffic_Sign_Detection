@@ -48,7 +48,7 @@ loaded_model = model_from_json(loaded_model_json)
 
 
 #load weights into new model
-loaded_model.load_weights(cwd + "/model_10.h5")
+loaded_model.load_weights( "/model_10.h5")
 
 # weights_path = get_file(
 #             'model_10_git.h5',
