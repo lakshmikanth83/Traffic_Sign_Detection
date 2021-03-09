@@ -19,17 +19,17 @@ from imageai.Detection import ObjectDetection
 
 from sklearn.base import BaseEstimator, TransformerMixin
 from skimage.feature import hog
-from skimage.io import imread
+# from skimage.io import imread
 from skimage.transform import rescale
 
-import pickle
+# import pickle
 
-from PIL import Image
-from numpy import asarray
-from skimage import transform
-from skimage import exposure
-from skimage import io
-import requests
+# from PIL import Image
+# from numpy import asarray
+# from skimage import transform
+# from skimage import exposure
+# from skimage import io
+# import requests
 
 class RGB2GrayTransformer(BaseEstimator, TransformerMixin):
     """
