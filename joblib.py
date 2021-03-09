@@ -15,7 +15,7 @@ import joblib
 import pandas as pd
 import os
 # import wget
-from imageai.Detection import ObjectDetection
+# from imageai.Detection import ObjectDetection
 
 from sklearn.base import BaseEstimator, TransformerMixin
 from skimage.feature import hog
