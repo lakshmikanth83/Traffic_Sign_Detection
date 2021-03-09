@@ -3,6 +3,20 @@ matplotlib==3.3.2
 tensorflow==2.4.1
 
 requests==2.24.0
-Keras==2.4.3
+
 scikit-image
 joblib
+
+
+
+
+
+scikit-image==0.18.1
+opencv-python==4.1.2.30
+imageai==2.1.6
+sklearn
+pickle
+
+
+
+Keras==2.4.3
