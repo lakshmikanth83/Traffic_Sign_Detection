@@ -11,7 +11,7 @@ import matplotlib as mpl
 import pandas as pd
 import skimage
 
-import cv2
+# import cv2
 import pandas as pd
 import os
 import wget
