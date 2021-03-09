@@ -20,3 +20,5 @@ pickle
 
 
 Keras==2.4.3
+opencv-python==4.1.2.30
+imageai==2.1.6
