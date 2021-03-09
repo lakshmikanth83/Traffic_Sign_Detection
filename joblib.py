@@ -9,7 +9,7 @@ import joblib
 # from skimage.transform import resize
 # import matplotlib as mpl
 # import pandas as pd
-import skimage
+# import skimage
 
 # import cv2
 import pandas as pd
