@@ -14,7 +14,7 @@ import skimage
 # import cv2
 import pandas as pd
 import os
-import wget
+# import wget
 from imageai.Detection import ObjectDetection
 
 from sklearn.base import BaseEstimator, TransformerMixin
