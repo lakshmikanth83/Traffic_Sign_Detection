@@ -5,10 +5,10 @@ import os
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
 import joblib
-from skimage.io import imread
+# from skimage.io import imread
 from skimage.transform import resize
-import matplotlib as mpl
-import pandas as pd
+# import matplotlib as mpl
+# import pandas as pd
 import skimage
 
 # import cv2
